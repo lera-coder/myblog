@@ -440,7 +440,7 @@ footer img{
     padding: 100px 10% 100px 10%;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     
     .main-page section{
         padding: 5%;
@@ -555,7 +555,7 @@ footer img{
 
 
 
- @media screen and (min-width: 670px) {
+ @media (max-width: 670px) {
      
      
     .main-page section{
