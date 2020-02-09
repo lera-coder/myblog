@@ -1,0 +1,665 @@
+   
+/*Для шрифтов*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+ 
+/*Для общих нстроек шрифтов*/
+
+body{
+font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+color: azure
+
+}
+
+h1, h3{
+font-family: 'Open Sans', cursive;
+    color: whitesmoke;
+
+}
+
+h1, h2{
+        text-align: center;
+        margin: 70px 0px 70px 0px;
+
+
+}
+
+em{
+         font-style: italic
+     } 
+
+h1{
+    font-size: 30pt;
+    display: none;
+    
+}
+
+h2{
+    font-size: 30pt;
+}
+
+section:nth-child(2) h2{
+    visibility: hidden;
+}
+
+h3{
+    font-size: 17pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+p{
+    margin-bottom: 20px;
+    font-size: 12pt;
+}
+
+a{
+    color: aqua;
+    
+}
+
+a:visited{
+    color: red;
+}
+
+header a:visited{
+    color: white;
+}
+
+/*Для фона*/
+
+.gradient{
+    background: radial-gradient(circle, #042e50, #185c94) ;
+}
+
+.bg-img{
+    background: url(images/bg-img-1.png);
+    background-attachment:fixed;
+    
+}
+
+
+section{
+    padding: 150px 20px 150px 20px
+    
+
+
+}
+
+
+
+/*Для хедера*/
+header{
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background:  url(images/header);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+        background-size: auto 100%;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        
+    }
+
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+
+ }
+
+header nav a{
+    color: white;
+    font-size: 13pt;
+}
+
+
+ header nav ul li{
+     margin-left: 5%;
+/*
+     border: solid 1px white;
+    
+     padding: 10px;
+     background: rgba(255, 255, 255, 0.1);
+*/
+    height: 30px;
+
+    }
+
+logo img{
+        margin: 0px 0px 30px 70px;
+    height: 80px;
+
+}
+
+ header nav ul li a{
+       text-decoration: none;
+
+    }
+
+
+
+
+
+
+/*Для фото страницы*/
+
+.photo-gallery div{
+        width: 25%;
+        align-content: center;
+        padding: 20px 0px;
+        background: #2a4a63;
+        border: solid 10px #0e2f4d;
+        margin: 50px 10px;
+        text-align: center;
+        position: relative;
+        }
+
+.photo-gallery p{
+    margin-top: 40px;
+    font-size: 14pt;
+}
+
+.photo-gallery div p:nth-child(2){
+    margin-top: -35px;
+    margin-left: 41%;
+    z-index: 100;
+    font-size: 15pt;
+}
+
+
+.photo-gallery div p:nth-child(2) span{
+     background: rgba(0,0,0, 0.4);
+    background-size: contain;
+    padding: 5px;
+}
+ .photo-gallery img{
+     width: 80%;
+     height: auto;
+    margin-left: auto;
+    margin-right: auto;  
+    transition: .8s cubic-bezier(.165,.84,.44,1);
+
+ }    
+
+ .photo-gallery img:hover{
+     transform: rotate(5deg);
+     z-index: 5;
+}
+
+.photo-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto 0px auto;
+    align-items: stretch;
+    
+}
+  
+
+
+
+
+/*ПЕрвый блок главной страницы*/
+
+.text-block{
+    display: flex;
+    margin:  70px 0px 50px 0px;
+}
+
+
+.text{
+    margin-left: 20px;
+}
+
+
+.text-block img{
+        height: 400px;
+
+}
+
+
+/*Блок семьи главной страницы*/
+
+.rotate-wrapper{
+    height: 100px;
+    transform: rotate(4deg);
+    margin-bottom: -70px;
+    background: #7b96ad url(images/bg-img-1.png) fixed ;
+    border-top: solid 15px #042E50;
+}
+
+.family-block ul li img{
+    height: 200px;
+    border-radius: 200px;
+    border: solid 5px #ededed;
+    
+}
+
+.family-block ul{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.family-block ul li:nth-child(2){
+    padding: 0 15% 0 15%;
+}
+
+.family-block-bg{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 600px;
+    padding: 0;
+    background: #7b96ad url(images/bg-img-1.png) fixed ;
+    border-bottom: solid 15px #042E50;
+
+    
+}
+.family-block-bg h3, .family-block-bg  {
+    color: black;
+}
+
+
+
+.family-block ul li p, .family-block ul li h3{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/*Блок хобби*/
+
+.hobby-block ul li {
+    display: flex;
+    margin-bottom: 11%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hobby-block ul li img {
+    height: 200px;
+}
+
+.hobby-block ul li div {
+    width: 500px;
+    
+}
+
+.hobby-block{
+    padding-top: 50px;
+    padding-left: 7%;
+    padding-right: 5%;
+}
+
+
+
+
+
+/*Мое расписание*/
+
+.rozklad_page{
+        padding: 200px 0px 100px 0px;
+
+}
+
+
+table {
+    margin: 0px auto 0px auto;
+    border:black solid 1px;
+    background: #2B4A63;
+ }
+
+table .table_time{
+    background: #042E50;
+}
+
+ table th, table td {
+            border: black solid 1px;
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+            height: 70px;
+            text-align: center;
+            vertical-align: middle;
+    }
+
+table th{
+    background: #042E50;
+}
+
+
+/*Блок футер*/
+
+  footer{
+    background: #042E50;
+    margin: 0;
+    height: 80px;
+     margin-top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+footer p{
+    margin: 0;
+}
+footer img{
+    height: 40px;
+    padding-left: 20px;
+}
+
+
+/*Страница новостей*/
+
+.news_page{
+    padding-top: 50px;
+    margin: 0;
+}
+
+.news_page article{
+    margin: 5%;
+    background: #2B4A63;
+    padding: 50px;
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+     margin-top:50px;
+    padding-top:50px;
+    border: #0e2f4d solid 5px;
+}
+
+.crop{
+    flex-basis: 40%;
+    overflow: hidden;
+    
+}
+
+.news_page article img{
+    height: 300px;
+
+}
+
+.news_page article h2{
+    font-size: 22pt;
+    text-align: left;
+    margin: 0px 0px 20px 0px;
+}
+
+.news_page article div:nth-child(2){
+    margin: 0px 0px 0px 50px;
+    flex-basis: 60%;
+}
+
+
+.news_page article a{ 
+  text-decoration: none;
+  outline: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #f28e3d, #fde590, #fbd778, #facf6b);
+  border-image-slice: 1;
+  margin: 10px 0px;  
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+
+}
+
+.news_page article a:hover{ 
+/*    background-image:  linear-gradient(180deg, #f28e3d, #fde590, #fbd778, #facf6b);*/
+    box-shadow: 0 0 20px rgba(250,207,107, 0.5);
+}
+
+
+/*Общие настройки для сайта*/
+
+.main-page section{
+    padding: 100px 10% 100px 10%;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .main-page section{
+        padding: 5%;
+    }
+    
+    .text-block{
+        padding-bottom: 50px;
+    }
+    .family-block ul li img{
+    height: 190px;
+
+    
+}
+    
+    .family-block ul{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+    
+    .family-block ul li:nth-child(2){
+    padding: 0;
+}
+    
+    section h2{
+        margin-bottom: 50px;
+    }
+    .hobby-block{
+        padding: 0;
+    }
+    
+   .hobby-block ul li img{
+        height: 150px;
+    }
+    
+    .hobby-block ul li div {
+    width: 400px;
+    
+}
+    
+
+
+.news_page article{
+    margin: 5%;
+    background: #2B4A63;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+    padding-top:50px;
+    border: #0e2f4d solid 5px;
+    flex-direction: column;
+}
+
+.crop{
+    flex-basis: 40%;
+    overflow: hidden;
+    
+    
+}
+
+.news_page article img{
+    height: 300px;
+
+}
+
+.news_page article h2{
+    font-size: 22pt;
+    text-align: left;
+    margin: 50px 0px 20px 0px;
+}
+
+.news_page article div:nth-child(2){
+    margin: 0px;
+}
+    
+    .news a{
+        align-self: center;
+    }
+
+
+.photo-gallery div{
+        width: 40%;
+        align-content: space-between;
+        padding: 20px 0px;
+        background: #2a4a63;
+        border: solid 10px #0e2f4d;
+
+        }
+   
+
+
+.photo-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px auto 0px auto;
+    align-items: stretch;
+    
+}
+      
+    
+    
+    
+}
+
+
+
+
+
+
+ @media screen and (max-width: 670px) {
+     
+     
+    .main-page section{
+    padding: 1%;
+     }
+     
+     .family-block ul{
+         flex-direction: column;
+         align-items: center;
+         
+         
+     }
+     
+     .hobby-block{
+    padding: 0;
+}
+     
+     .family-block-bg{
+         height: 1200px;
+     }
+     .family-block{
+         height: 800px;
+     }
+     
+     .text-block{
+         flex-direction: column;
+         justify-content: center;
+         align-content: center;
+         padding-bottom: 100px;
+
+     }
+     
+     .text-block img{
+         height: auto;
+         width: 70%;
+         align-self: center;
+         margin-bottom: 50px;
+     }
+     
+     .text{
+         width: 80%;
+         align-content: center;
+         align-self: center;
+     }
+     
+     .hobby-block ul li {
+         flex-direction: column;
+         margin-bottom: 150px;
+         justify-content: center;
+         
+    
+     }
+     
+     .hobby-block ul li div {
+        width: 80%;
+        align-content: center;
+        text-align: center;
+    
+}
+     
+     .hobby-block img{
+         margin-bottom: 50px;
+     }
+     
+     
+     .rozklad_page {
+         font-size: 8pt
+     }
+     
+     
+     .crop{
+    flex-basis: 70%;
+    overflow: hidden;
+    
+    
+}
+
+
+     .news_page article img{
+         height: auto;
+    width: 300px;
+
+}
+     
+     .photo-gallery div{
+        width: 80%;
+        align-content: space-between;
+        padding: 20px 0px;
+        background: #2a4a63;
+        border: solid 10px #0e2f4d;
+
+        }
+   
+
+
+.photo-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px auto 0px auto;
+    align-items: stretch;
+    
+}
+        
+   } 
+
+
