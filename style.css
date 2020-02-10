@@ -659,6 +659,21 @@ footer img{
     align-items: stretch;
     
 }
+    
+           footer{
+           padding-top: 30px;
+           padding-bottom: 10px;
+           flex-direction: column;
+   }
+     
+
+     
+     .footer_icons{
+         display: flex;
+         margin-top: 20px;
+         margin-bottom: 10px;
+         
+     }
         
    } 
 
